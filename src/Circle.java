@@ -1,31 +1,40 @@
 
 public class Circle {
-	public Circle(double radius){
-		
+
+	public Circle(double radius) {
+
 	}
-	public double getCircumference(){
-		return 0;
-		
+
+	public static double getCircumference(int radius) {
+		double circumference = 2 * Math.PI * radius;
+		return circumference;
 	}
-	public String getFormattedCircumference(){
+
+	public String getFormattedCircumference() {
+		double circumference = 0.00;
 		return null;
-		
 	}
-	public double getArea(){
-		return 0;
-		
+
+	public double getArea(double radius) {
+		double area = Math.PI * (radius * radius);
+		return area;
 	}
-	public String getFormattedArea(){
+
+	public String getFormattedArea() {
+		double area = 0.00;
 		return null;
-		
 	}
-	private String formatNumber(double x){
+
+	private String formatNumber(double x) {
 		return null;
-		
+
 	}
-	public static int getObjectCount(){
-		return 0;
-		
+
+	public static int getObjectCount(String choice, int value) {
+		if (choice != "n") {// counts the number of times user builds circle object
+			value = value + 1;
+		}
+		return value;
 	}
-	
-}//end public class Circle
+
+}// end public class Circle

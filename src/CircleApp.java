@@ -19,6 +19,8 @@ public class CircleApp {
 	public static void main(String[] args) {
 
 		// declare variables;
+		double area;
+		int radius;
 		String choice = "y";
 		int value = 0;
 
@@ -30,22 +32,22 @@ public class CircleApp {
 			System.out.println("Enter radius:  ");
 			// identify scanner;
 			Scanner k = new Scanner(System.in);
-			int radius = k.nextInt();
+			 radius = k.nextInt();
 			//input validation
 			while(radius < 1) {// boolean to initiate validation loop
 				System.out.println("Please enter a positive number.");
 				radius = k.nextInt();
 			}//end validation loop
+			
 			// program output and calculations;
-
+			System.out.println("Circumference:  " + Circle.getCircumference(radius));
+			
 			// continue y/n
 			k.nextLine();
 			System.out.println("Continue? y/n");
 			choice = k.nextLine();
 		} while (choice.equals("y")); // end do-while loop
-			if(choice != "n" ){//counts the number of times user builds circle object
-				value = value + 1;
-			}//ends circle object count
+			
 			if(choice.equals("n")){
 				System.out.println("Goodbye. You created " + value + " Circle objects(s).");
 			}// ends if statement
