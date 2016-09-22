@@ -41,6 +41,11 @@ public class CircleApp {
 			
 			// program output and calculations;
 			System.out.println("Circumference:  " + Circle.getCircumference(radius));
+			//the above calls getCircumference Method
+			System.out.println();//line space for visual appeal
+			
+			System.out.println("Area:  " + Circle.getArea(radius));//invokes getArea Method
+			System.out.println();//line space for visual appeal
 			
 			// continue y/n
 			k.nextLine();
@@ -48,10 +53,11 @@ public class CircleApp {
 			choice = k.nextLine();
 		} while (choice.equals("y")); // end do-while loop
 			
-			if(choice.equals("n")){
-				System.out.println("Goodbye. You created " + value + " Circle objects(s).");
-			}// ends if statement
+				System.out.println("Goodbye. You created " + Circle.getObjectCount(choice, value) + " Circle objects(s).");
+				//the above calls getObjectCount Method (currently not incrementing)
+				
+			}// psvm
 
-	}// psvm
+	}// end class
 
-}// end class
+

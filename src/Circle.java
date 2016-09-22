@@ -1,8 +1,9 @@
 
 public class Circle {
 
-	public Circle(double radius) {
-
+	public Circle(double radius) {//why do i need this?
+		double circle = 2 * radius;
+		return;
 	}
 
 	public static double getCircumference(int radius) {
@@ -15,7 +16,7 @@ public class Circle {
 		return null;
 	}
 
-	public double getArea(double radius) {
+	public static double getArea(double radius) {
 		double area = Math.PI * (radius * radius);
 		return area;
 	}
@@ -25,13 +26,13 @@ public class Circle {
 		return null;
 	}
 
-	private String formatNumber(double x) {
+	private String formatNumber(double x) {//why do i need this?
 		return null;
 
 	}
 
 	public static int getObjectCount(String choice, int value) {
-		if (choice != "n") {// counts the number of times user builds circle object
+		if (choice.equals("y")) {// counts the number of times user builds circle object
 			value = value + 1;
 		}
 		return value;
