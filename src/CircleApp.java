@@ -10,7 +10,7 @@ import java.util.Scanner;
  *program output
  */
 // declare class
-public class Circumference {
+public class CircleApp {
 
 	/**
 	 * @param args
@@ -20,7 +20,7 @@ public class Circumference {
 
 		// declare variables;
 		String choice = "y";
-		String value = null;
+		int value = 0;
 
 		// output and prompts;
 		System.out.println("Welcome to the Circle Tester");
