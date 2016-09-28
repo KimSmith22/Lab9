@@ -26,8 +26,9 @@ public class Circle {
 		return null;
 	}
 
-	private String formatNumber(double x) {//why do i need this?
-		return null;
+	private String formatNumber(double x) {
+		String formatNum = String.format("%.2f", radius);
+		return formatNum;
 
 	}
 
