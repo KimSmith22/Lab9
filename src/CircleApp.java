@@ -13,7 +13,7 @@ public class CircleApp {
 	 */
 	// declare method {
 	public static void main(String[] args) {
-		Circle c = new Circle(0);
+		
 		// declare variables;
 		double area;
 		int radius;
@@ -30,6 +30,8 @@ public class CircleApp {
 			// identify scanner;
 			Scanner k = new Scanner(System.in);
 			radius = k.nextInt();
+			//Create new object with the radius variable
+			Circle c = new Circle(radius);
 			// input validation
 			while (radius < 1) {// boolean to initiate validation loop
 				System.out.println("Please enter a positive number.");
@@ -37,11 +39,11 @@ public class CircleApp {
 			} // end validation loop
 
 			// program output and calculations;
-			System.out.println("Circumference:  " + Circle.getCircumference(radius));
+			System.out.format("Circumference:  " + c.getFormattedCircumference());
 			// the above calls getCircumference Method
 			System.out.println();// line space for visual appeal
 
-			System.out.println("Area:  " + Circle.getArea(radius));// invokes
+			System.out.format("Area:  " + c.getFormattedArea());// invokes
 																	// getArea
 																	// Method
 			System.out.println();// line space for visual appeal

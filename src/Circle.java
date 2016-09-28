@@ -6,28 +6,28 @@ public class Circle {
 		radius = r;
 	}
 
-	public static double getCircumference(int radius) {
-		double circumference = 2 * Math.PI * radius;
+	public double getCircumference() {
+		double circumference = 2 * Math.PI *this.radius;
 		return circumference;
 	}
 
 	public String getFormattedCircumference() {
-		double circumference = 0.00;
-		return null;
+		String formatNum = String.format("%10.2f%n",getCircumference());
+		return formatNum;
 	}
 
-	public static double getArea(double radius) {
+	public  double getArea() {
 		double area = Math.PI * (radius * radius);
 		return area;
 	}
 
 	public String getFormattedArea() {
-		double area = 0.00;
-		return null;
+		String formatNum = String.format("%10.2f%n", getArea());
+		return formatNum;
 	}
 
 	private String formatNumber(double x) {
-		String formatNum = String.format("%.2f", radius);
+		String formatNum = String.format("%10.2f%n", radius);
 		return formatNum;
 
 	}
