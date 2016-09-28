@@ -1,9 +1,9 @@
 
 public class Circle {
-
-	public Circle(double radius) {//why do i need this?
-		double circle = 2 * radius;
-		return;
+	public double radius;
+	
+	public Circle(double r) {
+		radius = r;
 	}
 
 	public static double getCircumference(int radius) {
